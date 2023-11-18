@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".HomeFragment">
+
+  <ScrollView
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:context=".Inicio">
+
+      <View
+        android:id="@+id/viewTopo"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:background="@color/vermelho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/textViewTopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Início"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewTopo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <View
+        android:id="@+id/viewDicasTopo"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/rosa_bege"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTopo" />
+
+      <View
+        android:id="@+id/viewSuporte"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/rosa_bege"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewMinhasConsultas" />
+
+      <ImageView
+        android:id="@+id/imageViewSuporte"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewSuporte"
+        app:layout_constraintStart_toStartOf="@+id/viewSuporte"
+        app:layout_constraintTop_toTopOf="@+id/viewSuporte"
+        app:srcCompat="@drawable/headset" />
+
+      <TextView
+        android:id="@+id/textViewSuporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Suporte"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewSuporte"
+        app:layout_constraintEnd_toEndOf="@+id/viewSuporte"
+        app:layout_constraintStart_toStartOf="@+id/viewSuporte" />
+
+      <View
+        android:id="@+id/viewMinhasConsultas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/rosa_bege"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewDicasTopo" />
+
+      <ImageView
+        android:id="@+id/imageViewMinhasConsultas"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewMinhasConsultas"
+        app:layout_constraintStart_toStartOf="@+id/viewMinhasConsultas"
+        app:layout_constraintTop_toTopOf="@+id/viewMinhasConsultas"
+        app:srcCompat="@drawable/consulta_medica" />
+
+      <TextView
+        android:id="@+id/textViewMinhasConsultas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Minhas\nConsultas"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMinhasConsultas"
+        app:layout_constraintEnd_toEndOf="@+id/viewMinhasConsultas"
+        app:layout_constraintStart_toStartOf="@+id/viewMinhasConsultas" />
+
+      <View
+        android:id="@+id/viewAgendarConsultas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="230dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/rosa_bege"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewDicasTopo" />
+
+      <TextView
+        android:id="@+id/textViewAgendarConsultas3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Agendar\nConsultas"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewAgendarConsultas"
+        app:layout_constraintEnd_toEndOf="@+id/viewAgendarConsultas"
+        app:layout_constraintStart_toStartOf="@+id/viewAgendarConsultas" />
+
+      <ImageView
+        android:id="@+id/imageViewAgendarConsultas2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewAgendarConsultas"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/viewAgendarConsultas"
+        app:layout_constraintTop_toTopOf="@+id/viewAgendarConsultas"
+        app:srcCompat="@drawable/calendario" />
+
+      <TextView
+        android:id="@+id/textViewDicasTopo"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Cuidando de Você"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewDicasTopo"
+        app:layout_constraintEnd_toEndOf="@+id/viewDicasTopo"
+        app:layout_constraintStart_toStartOf="@+id/viewDicasTopo"
+        app:layout_constraintTop_toTopOf="@+id/viewDicasTopo" />
+
+      <View
+        android:id="@+id/viewMeusDocumentos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/rosa_bege"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewDicasTopo" />
+
+      <View
+        android:id="@+id/viewMeuPlano"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="230dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/rosa_bege"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewAgendarConsultas" />
+
+      <View
+        android:id="@+id/viewFamilia"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/rosa_bege"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewMeusDocumentos" />
+
+      <ImageView
+        android:id="@+id/imageViewMeusDocumentos"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewMeusDocumentos"
+        app:layout_constraintStart_toStartOf="@+id/viewMeusDocumentos"
+        app:layout_constraintTop_toTopOf="@+id/viewMeusDocumentos"
+        app:srcCompat="@drawable/envio" />
+
+      <ImageView
+        android:id="@+id/imageViewMeuPlano"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewMeuPlano"
+        app:layout_constraintStart_toStartOf="@+id/viewMeuPlano"
+        app:layout_constraintTop_toTopOf="@+id/viewMeuPlano"
+        app:srcCompat="@drawable/paciente" />
+
+      <ImageView
+        android:id="@+id/imageViewFamilia"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewFamilia"
+        app:layout_constraintStart_toStartOf="@+id/viewFamilia"
+        app:layout_constraintTop_toTopOf="@+id/viewFamilia"
+        app:srcCompat="@drawable/ic_baseline_groups_2_24" />
+
+      <TextView
+        android:id="@+id/textViewMeusDocumentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Meus\nDocumentos"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMeusDocumentos"
+        app:layout_constraintEnd_toEndOf="@+id/viewMeusDocumentos"
+        app:layout_constraintStart_toStartOf="@+id/viewMeusDocumentos" />
+
+      <TextView
+        android:id="@+id/textViewMeuPlano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Meu Plano"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMeuPlano"
+        app:layout_constraintEnd_toEndOf="@+id/viewMeuPlano"
+        app:layout_constraintStart_toStartOf="@+id/viewMeuPlano" />
+
+      <TextView
+        android:id="@+id/textViewFamilia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Família"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFamilia"
+        app:layout_constraintEnd_toEndOf="@+id/viewFamilia"
+        app:layout_constraintStart_toStartOf="@+id/viewFamilia" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </ScrollView>
+
+</FrameLayout>

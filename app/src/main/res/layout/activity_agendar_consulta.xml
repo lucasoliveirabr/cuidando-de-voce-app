@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:context=".AgendarConsulta">
+
+        <TextView
+          android:id="@+id/textViewHorario"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="70dp"
+          android:layout_marginTop="37dp"
+          android:fontFamily="sans-serif-medium"
+          android:text="Horário"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+        <AutoCompleteTextView
+          android:id="@+id/aCTextViewEspecialidade"
+          android:layout_width="0dp"
+          android:layout_height="50dp"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@drawable/edittext_background"
+          android:drawableEnd="@drawable/ic_search"
+          android:drawablePadding="20dp"
+          android:ems="10"
+          android:hint="Selecione a especialidade"
+          android:inputType="textPersonName"
+          android:paddingStart="30dp"
+          android:paddingEnd="10dp"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewEspecialidade" />
+
+        <AutoCompleteTextView
+          android:id="@+id/aCTextViewLocal"
+          android:layout_width="0dp"
+          android:layout_height="50dp"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="32dp"
+          android:background="@drawable/edittext_background"
+          android:drawableEnd="@drawable/ic_search"
+          android:drawablePadding="20dp"
+          android:ems="10"
+          android:hint="Insira um local a seguir"
+          android:inputType="textPersonName"
+          android:paddingStart="30dp"
+          android:paddingEnd="10dp"
+          android:textStyle="bold"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewLocal" />
+
+        <View
+          android:id="@+id/viewTopo2"
+          android:layout_width="0dp"
+          android:layout_height="140dp"
+          android:layout_marginBottom="572dp"
+          android:background="@color/vermelho"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+          android:id="@+id/textViewInicio2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Agendar Consulta"
+          android:textColor="#FFFFFF"
+          android:textSize="34sp"
+          app:layout_constraintBottom_toBottomOf="@+id/viewTopo2"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/viewTopo2" />
+
+        <TextView
+          android:id="@+id/textViewAtendimento"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="70dp"
+          android:layout_marginTop="37dp"
+          android:fontFamily="sans-serif-medium"
+          android:text="Atendimento"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/viewTopo2" />
+
+        <TextView
+          android:id="@+id/textViewLocal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="70dp"
+          android:layout_marginTop="37dp"
+          android:fontFamily="sans-serif-medium"
+          android:text="Local"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/toggleButtonGroupTipoConsulta" />
+
+        <TextView
+          android:id="@+id/textViewEspecialidade"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="70dp"
+          android:layout_marginTop="37dp"
+          android:fontFamily="sans-serif-medium"
+          android:text="Especialidade"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/aCTextViewLocal" />
+
+        <TextView
+          android:id="@+id/textViewData"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="70dp"
+          android:layout_marginTop="37dp"
+          android:fontFamily="sans-serif-medium"
+          android:text="Data"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/aCTextViewEspecialidade" />
+
+        <Button
+          android:id="@+id/buttonConfirmar"
+          android:layout_width="150dp"
+          android:layout_height="50dp"
+          android:layout_marginTop="32dp"
+          android:layout_marginBottom="32dp"
+          android:text="Confirmar"
+          app:cornerRadius="50dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/spinnerHorario" />
+
+        <CalendarView
+          android:id="@+id/calendarView"
+          android:layout_width="300dp"
+          android:layout_height="300dp"
+          android:layout_marginTop="8dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewData" />
+
+        <ImageView
+          android:id="@+id/imageViewData"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="32dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/aCTextViewEspecialidade"
+          app:srcCompat="@drawable/calendario" />
+
+        <ImageView
+          android:id="@+id/imageViewEspecialidade"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="32dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/aCTextViewLocal"
+          app:srcCompat="@drawable/plano_de_saude" />
+
+        <ImageView
+          android:id="@+id/imageViewLocal"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="32dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/toggleButtonGroupTipoConsulta"
+          app:srcCompat="@drawable/hospital" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+          android:id="@+id/toggleButtonGroupTipoConsulta"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewAtendimento"
+          app:singleSelection="true">
+
+            <Button
+              android:id="@+id/buttonPresencial"
+              style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+              android:layout_width="155dp"
+              android:layout_height="50dp"
+              android:insetRight="10dp"
+              android:letterSpacing="0"
+              android:text="Presencial"
+              android:textAllCaps="false"
+              app:cornerRadius="10dp"
+              app:icon="@drawable/predio"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/textViewAtendimento" />
+
+            <Button
+              android:id="@+id/buttonTelemedicina"
+              style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+              android:layout_width="155dp"
+              android:layout_height="50dp"
+              android:insetLeft="10dp"
+              android:letterSpacing="0"
+              android:text="Telemedicina"
+              android:textAllCaps="false"
+              app:cornerRadius="10dp"
+              app:icon="@drawable/phone"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/textViewAtendimento" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <ImageView
+          android:id="@+id/imageViewAtendimento"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="32dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/viewTopo2"
+          app:srcCompat="@drawable/paciente" />
+
+        <Spinner
+          android:id="@+id/spinnerHorario"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewHorario"
+          tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+          android:id="@+id/imageViewHorario"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:layout_marginStart="32dp"
+          android:layout_marginTop="32dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/calendarView"
+          app:srcCompat="@drawable/relogio" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

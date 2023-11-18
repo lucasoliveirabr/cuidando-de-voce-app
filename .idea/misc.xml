@@ -1,0 +1,27 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/drawable-v24/calendario.xml" value="0.2115" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/drawable/cadeado_senha.xml" value="0.2115" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/drawable/calendario.xml" value="0.2115" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/drawable/calendario_cadastro.xml" value="0.2105" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/drawable/data_de_nascimento.xml" value="0.2115" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/drawable/edittext_background.xml" value="0.2105" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/drawable/pessoa_usuario.xml" value="0.2115" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/layout/activity_cadastro_cliente.xml" value="0.25" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/layout/activity_inicio.xml" value="0.25" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/layout/activity_splash_screen.xml" value="0.22" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2115" />
+        <entry key="..\:/Users/Brasil/Documents/ProjetosAndroidStudio/CuidandodeVoce/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2115" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="zulu-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
