@@ -51,6 +51,7 @@ public class AgendarConsulta extends AppCompatActivity {
         "Cardiologia",
         "Oftalmologia",
         "Hepatologia",
+        "Neurologia",
         "Outro"};
     aCTextViewEspecialidade.setAdapter(new ArrayAdapter<>(
         this,
@@ -58,8 +59,8 @@ public class AgendarConsulta extends AppCompatActivity {
         especialidades
     ));
 
-    Spinner spinnerHorario = (Spinner) findViewById(R.id.spinnerHorario);
-    String[] horarios = {"13hrs", "14hrs", "15hrs", "16hrs", "17hrs", "18hrs", "19hrs", "20hrs"};
+    Spinner spinnerHorario = findViewById(R.id.spinnerHorario);
+    String[] horarios = {"13h", "14h", "15h", "16h", "17h", "18h", "19h", "20h"};
     spinnerHorario.setAdapter(new ArrayAdapter<>(
         getApplicationContext(),
         com.google.android.material.R.layout.support_simple_spinner_dropdown_item,

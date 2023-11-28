@@ -20,7 +20,7 @@ public class Inicio extends AppCompatActivity {
 
     Objects.requireNonNull(getSupportActionBar()).hide();
 
-    BottomNavigationView navigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView);
+    BottomNavigationView navigationView = findViewById(R.id.bottomNavigationView);
     replaceFragment(new HomeFragment());
 
     navigationView.setOnItemSelectedListener(item -> {

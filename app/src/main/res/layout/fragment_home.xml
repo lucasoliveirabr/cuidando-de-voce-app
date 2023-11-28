@@ -199,6 +199,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/edittext_background"
         android:backgroundTint="@color/rosa_bege"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewMeusDocumentos" />

@@ -42,6 +42,12 @@ public class HomeFragment extends Fragment {
       startActivity(i);
     });
 
+    View viewFamilia = V.findViewById(R.id.viewFamilia);
+    viewFamilia.setOnClickListener(view -> {
+      Intent i = new Intent(getActivity(), Familia.class);
+      startActivity(i);
+    });
+
     return V;
   }
 
