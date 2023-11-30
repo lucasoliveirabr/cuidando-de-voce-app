@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="150px" src="./app/src/main/res/gitx/logo_app.png" alt="Cuidando de Você logo">
+  <img width="150px" src="./app/src/main/gitx/logo_app.png" alt="Cuidando de Você logo">
 </p>
 
 <h1 align="center">Cuidando de Você</h1>
@@ -8,7 +8,7 @@
   Aplicativo para agendamento de consultas
 </p>
 
-<img src="./app/src/main/res/gitx/app_mockup.png" alt="App Mockup">
+<img src="./app/src/main/gitx/app_mockup.png" alt="App Mockup">
 
 ---
 
@@ -20,4 +20,4 @@ Projeto desenvolvido durante a faculdade para o TCC sobre "O avanço tecnológic
 
 ### Download
 
-<img width="150px" src="./app/src/main/res/gitx/android_download.png" alt="Download Button">
+<a href="https://github.com/lucasoliveirabr/cuidando-de-voce-app/releases/download/v0.3.0/cuidando-de-voce-v0.3.0.apk"><img width="200px" src="./app/src/main/gitx/android_download.png" alt="Download Button"></a>

@@ -3,12 +3,14 @@ package com.example.cuidandodevoce;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Objects;
@@ -72,9 +74,20 @@ public class AgendarConsulta extends AppCompatActivity {
         Intent i = new Intent(AgendarConsulta.this, Inicio.class);
         startActivity(i);
         finish();
-        Toast.makeText(AgendarConsulta.this, "Consulta agendada com sucesso.", Toast.LENGTH_SHORT).show();
+
+        Toast toast = Toast.makeText(AgendarConsulta.this, "Consulta agendada com sucesso.", Toast.LENGTH_SHORT);
+        view = toast.getView();
+        view.setBackgroundResource(R.drawable.toast_border_success);
+        TextView text = (TextView) view.findViewById(android.R.id.message);
+        text.setTextColor(Color.parseColor("#000000"));
+        toast.show();
       } else {
-        Toast.makeText(AgendarConsulta.this, "Ocorreu um erro.\nTente novamente.", Toast.LENGTH_SHORT).show();
+        Toast toast = Toast.makeText(AgendarConsulta.this, "Ocorreu um erro.\nTente novamente mais tarde.", Toast.LENGTH_SHORT);
+        view = toast.getView();
+        view.setBackgroundResource(R.drawable.toast_border_error);
+        TextView text = (TextView) view.findViewById(android.R.id.message);
+        text.setTextColor(Color.parseColor("#000000"));
+        toast.show();
       }
     });
   }
