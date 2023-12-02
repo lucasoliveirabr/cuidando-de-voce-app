@@ -25,10 +25,10 @@ public class AgendarConsulta extends AppCompatActivity {
     Objects.requireNonNull(getSupportActionBar()).hide();
     getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-    // Button buttonTelemedicina = (Button) findViewById(R.id.buttonTelemedicina);
-    AutoCompleteTextView aCTextViewLocal = (AutoCompleteTextView) findViewById(R.id.aCTextViewLocal);
-    AutoCompleteTextView aCTextViewEspecialidade = (AutoCompleteTextView) findViewById(R.id.aCTextViewEspecialidade);
-    Button buttonConfirmar = (Button) findViewById(R.id.buttonConfirmar);
+    // Button buttonTelemedicina = findViewById(R.id.buttonTelemedicina);
+    AutoCompleteTextView aCTextViewLocal = findViewById(R.id.aCTextViewLocal);
+    AutoCompleteTextView aCTextViewEspecialidade = findViewById(R.id.aCTextViewEspecialidade);
+    Button buttonConfirmar = findViewById(R.id.buttonConfirmar);
 
     /*
     if (buttonTelemedicina.isFocused()) {
@@ -78,14 +78,14 @@ public class AgendarConsulta extends AppCompatActivity {
         Toast toast = Toast.makeText(AgendarConsulta.this, "Consulta agendada com sucesso.", Toast.LENGTH_SHORT);
         view = toast.getView();
         view.setBackgroundResource(R.drawable.toast_border_success);
-        TextView text = (TextView) view.findViewById(android.R.id.message);
+        TextView text = view.findViewById(android.R.id.message);
         text.setTextColor(Color.parseColor("#000000"));
         toast.show();
       } else {
         Toast toast = Toast.makeText(AgendarConsulta.this, "Ocorreu um erro.\nTente novamente mais tarde.", Toast.LENGTH_SHORT);
         view = toast.getView();
         view.setBackgroundResource(R.drawable.toast_border_error);
-        TextView text = (TextView) view.findViewById(android.R.id.message);
+        TextView text = view.findViewById(android.R.id.message);
         text.setTextColor(Color.parseColor("#000000"));
         toast.show();
       }

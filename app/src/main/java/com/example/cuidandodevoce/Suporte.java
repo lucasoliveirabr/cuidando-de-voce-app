@@ -24,7 +24,7 @@ public class Suporte extends AppCompatActivity {
     Objects.requireNonNull(getSupportActionBar()).hide();
     getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-    Button buttonEnviarSuporte = (Button) findViewById(R.id.buttonEnviarSuporte);
+    Button buttonEnviarSuporte = findViewById(R.id.buttonEnviarSuporte);
 
     Spinner spinnerSuporte = findViewById(R.id.spinnerSuporte);
     String[] tiposSuporte = {"Suporte", "Sugestão", "Feedback"};
@@ -43,14 +43,14 @@ public class Suporte extends AppCompatActivity {
         Toast toast = Toast.makeText(Suporte.this, "Mensagem enviada.\nRetornaremos em breve.", Toast.LENGTH_SHORT);
         view = toast.getView();
         view.setBackgroundResource(R.drawable.toast_border_success);
-        TextView text = (TextView) view.findViewById(android.R.id.message);
+        TextView text = view.findViewById(android.R.id.message);
         text.setTextColor(Color.parseColor("#000000"));
         toast.show();
       } else {
         Toast toast = Toast.makeText(Suporte.this, "Ocorreu um erro.\nTente novamente mais tarde.", Toast.LENGTH_SHORT);
         view = toast.getView();
         view.setBackgroundResource(R.drawable.toast_border_error);
-        TextView text = (TextView) view.findViewById(android.R.id.message);
+        TextView text = view.findViewById(android.R.id.message);
         text.setTextColor(Color.parseColor("#000000"));
         toast.show();
       }

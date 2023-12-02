@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -35,6 +36,12 @@ public class HomeFragment extends Fragment {
 
     int n = new Random().nextInt(frases.length);
     dicas.setText(frases[n]);
+
+    ImageView imageViewNotifications = V.findViewById(R.id.imageViewNotifications);
+    imageViewNotifications.setOnClickListener(view -> {
+      Intent i = new Intent(getActivity(), Notificacoes.class);
+      startActivity(i);
+    });
 
     View viewAgendarConsultas = V.findViewById(R.id.viewAgendarConsultas);
     viewAgendarConsultas.setOnClickListener(view -> {

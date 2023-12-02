@@ -9,7 +9,7 @@
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Familia">
+    tools:context=".Notificacoes">
 
     <View
       android:id="@+id/viewTopoNotificacoes"
@@ -24,7 +24,7 @@
       android:id="@+id/textViewTopoNotificacoes"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Família"
+      android:text="Notificações"
       android:textColor="#FFFFFF"
       android:textSize="34sp"
       app:layout_constraintBottom_toBottomOf="@+id/viewTopoNotificacoes"
@@ -36,7 +36,7 @@
       android:id="@+id/textViewTextoNotificacoes"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Disponível apenas no\n plano Família."
+      android:text="Sem notificações\n no momento."
       android:textAlignment="center"
       android:textSize="18sp"
       android:textStyle="bold"

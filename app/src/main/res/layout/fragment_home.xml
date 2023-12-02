@@ -145,7 +145,7 @@
         app:layout_constraintStart_toStartOf="@+id/viewAgendarConsultas" />
 
       <ImageView
-        android:id="@+id/imageViewAgendarConsultas2"
+        android:id="@+id/imageViewAgendarConsultas"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
@@ -270,6 +270,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/viewFamilia"
         app:layout_constraintEnd_toEndOf="@+id/viewFamilia"
         app:layout_constraintStart_toStartOf="@+id/viewFamilia" />
+
+      <ImageView
+        android:id="@+id/imageViewNotifications"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_notifications_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
   </ScrollView>

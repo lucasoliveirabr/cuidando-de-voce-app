@@ -16,8 +16,15 @@
     android:usesCleartextTraffic="true"
     tools:targetApi="33">
     <activity
+      android:name=".Notificacoes"
+      android:exported="false"
+      android:screenOrientation="portrait"
+      tools:ignore="LockedOrientationActivity" />
+    <activity
       android:name=".Suporte"
-      android:exported="false" />
+      android:exported="false"
+      android:screenOrientation="portrait"
+      tools:ignore="LockedOrientationActivity" />
     <activity
       android:name=".Familia"
       android:exported="false"
