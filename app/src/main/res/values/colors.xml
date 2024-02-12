@@ -2,7 +2,8 @@
 <resources>
     <color name="rosa_bege">#FFF0F0</color>
     <color name="vermelho">#D52A2A</color>
-    <color name="verde">#aae6a8</color>
+    <color name="verde">#AAE6A8</color>
+    <color name="yellow">#FFEB3B</color>
     <color name="vermelho_original">#CF1D12</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>

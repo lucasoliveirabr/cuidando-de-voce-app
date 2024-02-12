@@ -20,4 +20,4 @@ Projeto desenvolvido durante a faculdade para o TCC sobre "O avanço tecnológic
 
 ### Download
 
-<a href="https://github.com/lucasoliveirabr/cuidando-de-voce-app/releases/download/v0.3.0/cuidando-de-voce-v0.3.0.apk"><img width="200px" src="./app/src/main/gitx/android_download.png" alt="Download Button"></a>
+<a href="https://github.com/lucasoliveirabr/cuidando-de-voce-app/releases/download/v0.5.0/cuidando-de-voce-v0.5.0.apk"><img width="200px" src="./app/src/main/gitx/android_download.png" alt="Download Button"></a>

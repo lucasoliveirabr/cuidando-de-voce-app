@@ -1,32 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:fillViewport="true"
+  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
-  android:layout_height="match_parent">
+  android:layout_height="match_parent"
+  tools:context=".Inicio">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
+  <FrameLayout
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
 
-        <FrameLayout
-          android:id="@+id/frame_layout"
-          android:layout_width="0dp"
-          android:layout_height="0dp"
-          app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="parent">
+  <com.google.android.material.bottomappbar.BottomAppBar
+    android:id="@+id/bottomAppBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    app:fabCradleMargin="10dp"
+    app:fabCradleRoundedCornerRadius="50dp">
 
-        </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/bottomNavigationView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      app:labelVisibilityMode="labeled"
+      android:background="@android:color/transparent"
+      app:menu="@menu/bottom_nav_menu"/>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-          android:id="@+id/bottomNavigationView"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          app:layout_constraintBottom_toBottomOf="parent"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:menu="@menu/bottom_nav_menu"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+  </com.google.android.material.bottomappbar.BottomAppBar>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    android:src="@drawable/ic_baseline_face_retouching_natural_24"
+    app:layout_anchor="@id/bottomAppBar"
+    app:maxImageSize="30dp"
+    app:tint="@color/vermelho"
+    android:contentDescription="IA"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
