@@ -5,7 +5,7 @@
 <h1 align="center">Cuidando de Você</h1>
 
 <p align="center">
-  Aplicativo para agendamento de consultas
+  Aplicativo para agendamento de consultas médicas
 </p>
 
 <img src="./app/src/main/gitx/app_mockup.png" alt="App Mockup">
