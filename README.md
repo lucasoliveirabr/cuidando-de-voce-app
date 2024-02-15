@@ -14,7 +14,12 @@
 
 ### Sobre
 
-Projeto desenvolvido durante a faculdade para o TCC sobre "O avanço tecnológico na área da saúde", que apresentava o aplicativo Cuidando de Você.
+O aplicativo "Cuidando de Você" faz parte de um projeto desenvolvido durante a faculdade para o Trabalho de Conclusão de Curso (TCC) sobre "O avanço tecnológico na área da saúde".
+
+Destaques:
+- Aprovado com excelência.
+- Recebeu proposta sobre investimento.
+- Está em constante desenvolvimento e implementação de melhorias.
 
 ---
 

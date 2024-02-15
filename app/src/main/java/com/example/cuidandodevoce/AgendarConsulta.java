@@ -64,7 +64,7 @@ public class AgendarConsulta extends AppCompatActivity {
     Spinner spinnerHorario = findViewById(R.id.spinnerHorario);
     String[] horarios = {"13h", "14h", "15h", "16h", "17h", "18h", "19h", "20h"};
     spinnerHorario.setAdapter(new ArrayAdapter<>(
-        getApplicationContext(),
+        this, //getApplicationContext(),
         com.google.android.material.R.layout.support_simple_spinner_dropdown_item,
         horarios
     ));

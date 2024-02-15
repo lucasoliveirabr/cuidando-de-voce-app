@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -40,6 +41,7 @@ public class Suporte extends AppCompatActivity {
     toast.getView().setBackgroundResource(R.drawable.toast_border_success);
     TextView text = toast.getView().findViewById(android.R.id.message);
     text.setTextColor(Color.parseColor("#000000"));
+    text.setGravity(Gravity.CENTER);
     toast.show();
   }
 
@@ -48,11 +50,12 @@ public class Suporte extends AppCompatActivity {
     toast.getView().setBackgroundResource(R.drawable.toast_border_error);
     TextView text = toast.getView().findViewById(android.R.id.message);
     text.setTextColor(Color.parseColor("#000000"));
+    text.setGravity(Gravity.CENTER);
     toast.show();
   }
 
   public static String getCurrentTimestamp() {
-    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ", Locale.getDefault());
     sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
     return sdf.format(new Date());
   }
@@ -71,7 +74,7 @@ public class Suporte extends AppCompatActivity {
 
     String[] tiposSuporte = {"Suporte", "Sugestão", "Feedback"};
     spinnerSuporte.setAdapter(new ArrayAdapter<>(
-        getApplicationContext(),
+        this,
         com.google.android.material.R.layout.support_simple_spinner_dropdown_item,
         tiposSuporte
     ));
