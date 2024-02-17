@@ -21,29 +21,35 @@ public class MainActivity extends AppCompatActivity {
     Objects.requireNonNull(getSupportActionBar()).hide();
     getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-    TextView usuario = findViewById(R.id.editTextUsuario);
-    TextView senha = findViewById(R.id.editTextSenha);
-    Button botaoLogin = findViewById(R.id.buttonEntrar);
-    TextView cadastroPaciente = findViewById(R.id.textViewCadastresePaciente);
-    TextView cadastroMedico = findViewById(R.id.textViewCadastreseMedico);
+    TextView editTextUserEmail = findViewById(R.id.editTextUserEmail);
+    TextView editTextUserPassword = findViewById(R.id.editTextUserPassword);
+    Button buttonEnter = findViewById(R.id.buttonEnter);
+    TextView textViewForgotPassword = findViewById(R.id.textViewForgotPassword);
+    TextView textViewRegisterPatient = findViewById(R.id.textViewRegisterPatient);
+    TextView textViewRegisterDoc = findViewById(R.id.textViewRegisterDoc);
 
-    botaoLogin.setOnClickListener(view -> {
-      if (usuario.getText().toString().equals("") && senha.getText().toString().equals("")) {
-        Intent i = new Intent(MainActivity.this, Inicio.class);
+    buttonEnter.setOnClickListener(view -> {
+      if (editTextUserEmail.getText().toString().equals("") && editTextUserPassword.getText().toString().equals("")) {
+        Intent i = new Intent(this, Inicio.class);
         startActivity(i);
         finish();
       } else {
-        Toast.makeText(MainActivity.this, "Dados incorretos.\nTente novamente.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Dados incorretos.\nTente novamente.", Toast.LENGTH_SHORT).show();
       }
     });
 
-    cadastroPaciente.setOnClickListener(view -> {
-      Intent i = new Intent(MainActivity.this, CadastroPaciente.class);
+    textViewForgotPassword.setOnClickListener(view -> {
+      Intent i = new Intent(this, ForgotPassword.class);
       startActivity(i);
     });
 
-    cadastroMedico.setOnClickListener(view -> {
-      Intent i = new Intent(MainActivity.this, CadastroMedico.class);
+    textViewRegisterPatient.setOnClickListener(view -> {
+      Intent i = new Intent(this, CadastroPaciente.class);
+      startActivity(i);
+    });
+
+    textViewRegisterDoc.setOnClickListener(view -> {
+      Intent i = new Intent(this, CadastroMedico.class);
       startActivity(i);
     });
   }

@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Random;
+
 public class HomeFragment extends Fragment {
 
   public HomeFragment() {

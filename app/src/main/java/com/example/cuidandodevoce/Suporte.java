@@ -37,7 +37,7 @@ public class Suporte extends AppCompatActivity {
   private static final String TAG = "Suporte";
 
   public void successfulToast() {
-    Toast toast = Toast.makeText(Suporte.this, "Mensagem enviada.\nRetornaremos em breve.", Toast.LENGTH_SHORT);
+    Toast toast = Toast.makeText(this, "Mensagem enviada.\nRetornaremos em breve.", Toast.LENGTH_SHORT);
     toast.getView().setBackgroundResource(R.drawable.toast_border_success);
     TextView text = toast.getView().findViewById(android.R.id.message);
     text.setTextColor(Color.parseColor("#000000"));
@@ -46,7 +46,7 @@ public class Suporte extends AppCompatActivity {
   }
 
   public void errorToast() {
-    Toast toast = Toast.makeText(Suporte.this, "O sistema está indisponível no momento.\nLogo retornaremos.\nTente novamente mais tarde.", Toast.LENGTH_LONG);
+    Toast toast = Toast.makeText(this, "O sistema está indisponível no momento.\nLogo retornaremos.\nTente novamente mais tarde.", Toast.LENGTH_LONG);
     toast.getView().setBackgroundResource(R.drawable.toast_border_error);
     TextView text = toast.getView().findViewById(android.R.id.message);
     text.setTextColor(Color.parseColor("#000000"));
@@ -81,14 +81,14 @@ public class Suporte extends AppCompatActivity {
 
     buttonEnviarSuporte.setOnClickListener(view -> {
       if (editTextCampoSuporte.getText().toString().length() <= 3) {
-        Toast toast = Toast.makeText(Suporte.this, "A mensagem não pode ser tão curta.", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(this, "A mensagem não pode ser tão curta.", Toast.LENGTH_SHORT);
         view = toast.getView();
         view.setBackgroundResource(R.drawable.toast_border_warning);
         TextView text = view.findViewById(android.R.id.message);
         text.setTextColor(Color.parseColor("#000000"));
         toast.show();
       } else {
-        Intent i = new Intent(Suporte.this, Inicio.class);
+        Intent i = new Intent(this, Inicio.class);
         startActivity(i);
         finish();
 
@@ -100,7 +100,7 @@ public class Suporte extends AppCompatActivity {
         suportesRequest.setTimestamp(getCurrentTimestamp());
         suportesRequest.setMensagemUsuario(String.valueOf(editTextCampoSuporte.getText()));
 
-        Call<SuportesRequest> call = suportesApi.addSupportMessage(suportesRequest);
+        Call<SuportesRequest> call = suportesApi.addSupportChat(suportesRequest);
 
         Request request = call.request();
         Buffer buffer = new Buffer();

@@ -8,5 +8,9 @@ import retrofit2.http.POST;
 public interface SuportesApi {
   @Headers("Accept: application/json")
   @POST("suportes")
-  Call<SuportesRequest> addSupportMessage(@Body SuportesRequest suportesRequest);
+  Call<SuportesRequest> addSupportChat(@Body SuportesRequest suportesRequest);
+
+  @Headers("Accept: application/json")
+  @POST("add:id")
+  Call<SuportesRequestAddMessage> addSupportMessage(@Body SuportesRequestAddMessage suportesRequestAddMessage);
 }

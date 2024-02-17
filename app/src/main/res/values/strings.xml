@@ -1,5 +1,6 @@
 <resources>
   <string name="app_name">Cuidando de Você</string>
+  <string name="forgot_password"><u>Esqueceu a senha?</u></string>
   <string name="cadastrese_usuario"><u>Não possui uma conta? Cadastre-se!</u></string>
   <string name="cadastrese_medico"><u>Seja um de nossos médicos parceiros. Cadastre-se!</u></string>
   <string name="title_activity_login">LoginActivity</string>
