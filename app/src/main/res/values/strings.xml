@@ -1,15 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">Cuidando de Você</string>
-  <string name="forgot_password"><u>Esqueceu a senha?</u></string>
-  <string name="cadastrese_usuario"><u>Não possui uma conta? Cadastre-se!</u></string>
-  <string name="cadastrese_medico"><u>Seja um de nossos médicos parceiros. Cadastre-se!</u></string>
-  <string name="title_activity_login">LoginActivity</string>
-  <string name="prompt_email">Email</string>
-  <string name="prompt_password">Password</string>
-  <string name="action_sign_in">Sign in or register</string>
-  <string name="action_sign_in_short">Sign in</string>
-  <string name="welcome">"Welcome !"</string>
-  <string name="invalid_username">Not a valid username</string>
-  <string name="invalid_password">Password must be >5 characters</string>
-  <string name="login_failed">"Login failed"</string>
+
+  <!-- Login -->
+  <string name="welcome">Bem-vindo!</string>
+  <string name="email">E-mail</string>
+  <string name="password">Senha</string>
+  <string name="enter">Entrar</string>
+  <string name="forgot_password">Esqueceu a senha?</string>
+  <string name="google_login">Login com Google</string>
+  <string name="signup_patient">Não possui uma conta?</string>
+  <string name="signup_doctor">Seja um médico parceiro!</string>
+  <string name="signup">Cadastre-se!</string>
+
+  <!-- Forgot Password -->
+  <!-- Patient Register -->
+  <!-- Doctor Register -->
+  <!-- Home -->
+  <!-- Schedule appointment -->
+  <!-- Support -->
+  <!-- Family -->
+  <!-- Notifications -->
+  <!-- AI -->
+  <!-- Profile -->
+
 </resources>

@@ -25,4 +25,4 @@ Destaques:
 
 ### Download
 
-<a href="https://github.com/lucasoliveirabr/cuidando-de-voce-app/releases/download/v0.6.0/cuidando-de-voce-v0.6.0.apk"><img width="200px" src="./app/src/main/gitx/android_download.png" alt="Download Button"></a>
+<a href="https://github.com/lucasoliveirabr/cuidando-de-voce-app/releases/download/v0.7.0/cuidando-de-voce-v0.7.0.apk"><img width="200px" src="./app/src/main/gitx/android_download.png" alt="Download Button"></a>

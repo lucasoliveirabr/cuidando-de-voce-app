@@ -25,7 +25,7 @@
       android:layout_marginEnd="8dp"
       android:layout_marginBottom="8dp"
       android:text="Version"
-      android:textColor="@color/vermelho"
+      android:textColor="@color/red"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
