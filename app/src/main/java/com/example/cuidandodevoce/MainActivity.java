@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     buttonEnter.setOnClickListener(view -> {
-      if (editTextUserEmail.getText().toString().equals("") && editTextUserPassword.getText().toString().equals("")) {
+      if (editTextUserEmail.getText().toString().isEmpty() && editTextUserPassword.getText().toString().isEmpty()) {
         Intent i = new Intent(this, Inicio.class);
         startActivity(i);
         finish();

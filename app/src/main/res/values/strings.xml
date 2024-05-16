@@ -2,7 +2,8 @@
 <resources>
   <string name="app_name">Cuidando de Você</string>
 
-  <!-- Login -->
+  <!-- Login Screen -->
+  <string name="logo">Logo</string>
   <string name="welcome">Bem-vindo!</string>
   <string name="email">E-mail</string>
   <string name="password">Senha</string>

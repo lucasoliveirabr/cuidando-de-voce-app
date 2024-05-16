@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="pink">#d66060</color>
-    <color name="pink_beige">#FFF0F0</color>
-    <color name="red">#D52A2A</color>
-    <color name="green">#AAE6A8</color>
-    <color name="yellow">#FFEB3B</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+  <color name="pink">#d66060</color>
+  <color name="soft_pink">#ffa6a6</color>
+  <color name="pink_beige">#FFF0F0</color>
+  <color name="pink_beige2">#FFF5F5</color>
+  <color name="red">#D52A2A</color>
+  <color name="beige_gray">#EDDFDF</color>
+  <color name="green">#AAE6A8</color>
+  <color name="yellow">#FFEB3B</color>
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
 </resources>

@@ -12,7 +12,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import retrofit2.Call;
@@ -33,6 +36,9 @@ public class AiFragment extends Fragment {
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
     View V = inflater.inflate(R.layout.fragment_ai, container, false);
+
+    FloatingActionButton fab = requireActivity().findViewById(R.id.fab);
+    fab.setVisibility(View.GONE);
 
     /*
     AtomicInteger counter = new AtomicInteger(3);
@@ -56,6 +62,14 @@ public class AiFragment extends Fragment {
     */
 
     return V;
+  }
+
+  // onDestroyView() | onDetach() | onStop() | onPause()
+  @Override
+  public void onPause() {
+    super.onPause();
+    FloatingActionButton fab = requireActivity().findViewById(R.id.fab);
+    fab.setVisibility(View.VISIBLE);
   }
 }
 

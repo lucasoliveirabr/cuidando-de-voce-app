@@ -80,7 +80,7 @@ public class Suporte extends AppCompatActivity {
     ));
 
     buttonEnviarSuporte.setOnClickListener(view -> {
-      if (editTextCampoSuporte.getText().toString().length() <= 3) {
+      if (editTextCampoSuporte.getText().toString().isEmpty()) {
         Toast toast = Toast.makeText(this, "A mensagem não pode ser tão curta.", Toast.LENGTH_SHORT);
         view = toast.getView();
         view.setBackgroundResource(R.drawable.toast_border_warning);

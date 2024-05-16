@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -35,7 +36,9 @@ public class Inicio extends AppCompatActivity {
 
     FloatingActionButton fab = findViewById(R.id.fab);
     fab.setOnClickListener(v -> {
-      replaceFragment(new AiFragment());
+      //replaceFragment(new AiFragment());
+      Intent i = new Intent(getApplicationContext(), Ai.class);
+      startActivity(i);
     });
 
     navigationView.setOnItemSelectedListener(item -> {
