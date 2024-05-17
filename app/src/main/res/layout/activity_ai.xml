@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".Ai">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toTopOf="@id/aiBottomBar"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink_beige">
+
+        <View
+          android:id="@+id/viewTopoAi"
+          android:layout_width="0dp"
+          android:layout_height="140dp"
+          android:background="@color/soft_pink"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+          android:id="@+id/linearLayout"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:orientation="horizontal"
+          app:layout_constraintBottom_toBottomOf="@+id/viewTopoAi"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+          <TextView
+            android:id="@+id/textViewTopoAi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Doutora Estela"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+          <ImageView
+            android:id="@+id/imageViewSparkles"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/sparkles" />
+        </LinearLayout>
+
+        <ImageView
+          android:id="@+id/imageViewInfoAi"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:layout_marginEnd="8dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/ic_baseline_info_24" />
+
+        <TextView
+          android:id="@+id/textViewTopMessageAi"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="64dp"
+          android:text="Olá! Em que posso lhe ajudar?"
+          android:textAlignment="center"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/viewTopoAi" />
+
+        <TextView
+          android:id="@+id/textViewAiQuestion"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="32dp"
+          android:layout_marginEnd="24dp"
+          android:background="@drawable/edittext_background_ai"
+          android:backgroundTint="@color/beige_gray"
+          android:maxWidth="250dp"
+          android:paddingStart="10dp"
+          android:paddingEnd="10dp"
+          android:text="Pergunta"
+          android:textAlignment="textEnd"
+          android:textSize="18sp"
+          android:visibility="invisible"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewTopMessageAi" />
+
+        <TextView
+          android:id="@+id/textViewAiAnswer"
+          android:layout_width="315dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="32dp"
+          android:text="Resposta"
+          android:textSize="18sp"
+          android:visibility="invisible"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/textViewAiQuestion" />
+
+        <TextView
+          android:id="@+id/textViewUseLimit"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="24dp"
+          android:layout_marginEnd="8dp"
+          android:text="Usos gratuitos: 3/3"
+          android:textAlignment="center"
+          android:visibility="invisible"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/viewTopoAi" />
+
+        <TextView
+          android:id="@+id/textViewByUs"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="80dp"
+          android:text="por Cuidando de Você"
+          android:textSize="12sp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+  </LinearLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/aiBottomBar"
+    android:layout_width="0dp"
+    android:layout_height="65dp"
+    android:layout_weight="2"
+    android:background="@drawable/edittext_background_ai"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <EditText
+      android:id="@+id/editTextAiUserField"
+      android:layout_width="0dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="64dp"
+      android:layout_marginBottom="8dp"
+      android:background="@drawable/edittext_background_ai_user_field"
+      android:drawablePadding="20dp"
+      android:ems="10"
+      android:hint="Escreva aqui"
+      android:inputType="textMultiLine"
+      android:paddingStart="10dp"
+      android:paddingEnd="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+      android:id="@+id/imageButtonSendAi"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+      android:background="@drawable/bg_imagebutton"
+      android:backgroundTint="@color/beige_gray"
+      android:clickable="false"
+      android:contentDescription="Button Send Ai"
+      android:foreground="?android:attr/selectableItemBackground"
+      android:theme="@android:style/ThemeOverlay.Material.Dark"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

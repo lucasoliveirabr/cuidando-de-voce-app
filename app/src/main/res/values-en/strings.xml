@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Taking Care of You</string>
+
+  <!-- Login Screen -->
+  <string name="logo">Logo</string>
+  <string name="welcome">Welcome!</string>
+  <string name="email">E-mail</string>
+  <string name="password">Password</string>
+  <string name="enter">Enter</string>
+  <string name="forgot_password">Forgot password?</string>
+  <string name="google_login">Sign in with Google</string>
+  <string name="signup_patient">Don\'t have an account?</string>
+  <string name="signup_doctor">Become a partner doctor!</string>
+  <string name="signup">Sign-up!</string>
+
+  <!-- Forgot Password -->
+  <!-- Patient Register -->
+  <!-- Doctor Register -->
+  <!-- Home -->
+  <!-- Schedule appointment -->
+  <!-- Support -->
+  <!-- Family -->
+  <!-- Notifications -->
+  <!-- AI -->
+  <!-- Profile -->
+
+</resources>

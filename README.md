@@ -23,6 +23,14 @@ Destaques:
 
 ---
 
+### Doutora Estela ✨
+
+A Doutora Estela é uma inteligência artificial que assume o papel de médica, ajudando os pacientes a esclarecerem suas dúvidas.
+
+<img src="./app/src/main/gitx/ai_app_mockup.png" alt="App Mockup">
+
+---
+
 ### Download
 
-<a href="https://github.com/lucasoliveirabr/cuidando-de-voce-app/releases/download/v0.7.0/cuidando-de-voce-v0.7.0.apk"><img width="200px" src="./app/src/main/gitx/android_download.png" alt="Download Button"></a>
+<a href="https://github.com/lucasoliveirabr/cuidando-de-voce-app/releases/download/v0.8.1/cuidando-de-voce-v0.8.1.apk"><img width="200px" src="./app/src/main/gitx/android_download.png" alt="Download Button"></a>
