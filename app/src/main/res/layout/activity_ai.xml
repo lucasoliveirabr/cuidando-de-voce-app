@@ -34,12 +34,10 @@
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
           android:id="@+id/linearLayout"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_centerHorizontal="true"
-          android:orientation="horizontal"
           app:layout_constraintBottom_toBottomOf="@+id/viewTopoAi"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"
@@ -49,17 +47,30 @@
             android:id="@+id/textViewTopoAi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:text="Doutora Estela"
             android:textColor="@color/black"
-            android:textSize="34sp" />
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
           <ImageView
             android:id="@+id/imageViewSparkles"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:src="@drawable/sparkles" />
-        </LinearLayout>
+            android:src="@drawable/sparkles"
+            app:layout_constraintStart_toEndOf="@id/textViewTopoAi"
+            app:layout_constraintTop_toTopOf="parent" />
+
+          <TextView
+            android:id="@+id/textViewByUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="por Cuidando de Você"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewTopoAi" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ImageView
           android:id="@+id/imageViewInfoAi"
@@ -127,16 +138,6 @@
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/viewTopoAi" />
-
-        <TextView
-          android:id="@+id/textViewByUs"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginStart="80dp"
-          android:text="por Cuidando de Você"
-          android:textSize="12sp"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
       </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

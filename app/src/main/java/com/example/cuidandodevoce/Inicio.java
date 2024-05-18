@@ -7,7 +7,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -36,9 +35,9 @@ public class Inicio extends AppCompatActivity {
 
     FloatingActionButton fab = findViewById(R.id.fab);
     fab.setOnClickListener(v -> {
-      //replaceFragment(new AiFragment());
       Intent i = new Intent(getApplicationContext(), Ai.class);
       startActivity(i);
+      overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     });
 
     navigationView.setOnItemSelectedListener(item -> {

@@ -9,11 +9,14 @@ import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Calendar;
 import java.util.Objects;
+import java.util.TimeZone;
 
 public class AgendarConsulta extends AppCompatActivity {
 
@@ -25,17 +28,10 @@ public class AgendarConsulta extends AppCompatActivity {
     Objects.requireNonNull(getSupportActionBar()).hide();
     getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-    // Button buttonTelemedicina = findViewById(R.id.buttonTelemedicina);
+    CalendarView calendarView = findViewById(R.id.calendarView);
     AutoCompleteTextView aCTextViewLocal = findViewById(R.id.aCTextViewLocal);
     AutoCompleteTextView aCTextViewEspecialidade = findViewById(R.id.aCTextViewEspecialidade);
     Button buttonConfirmar = findViewById(R.id.buttonConfirmar);
-
-    /*
-    if (buttonTelemedicina.isFocused()) {
-      Toast.makeText(AgendarConsulta.this, "Funcionando.", Toast.LENGTH_SHORT).show();
-      aCTextViewLocal.setEnabled(false);
-    }
-    */
 
     String[] locais = {"São Paulo", "Barueri", "Osasco", "Jandira", "Carapicuíba", "Itapevi"};
     aCTextViewLocal.setAdapter(new ArrayAdapter<>(
@@ -61,10 +57,22 @@ public class AgendarConsulta extends AppCompatActivity {
         especialidades
     ));
 
+    NTPTimeProvider ntpTimeProvider = new NTPTimeProvider();
+    long ntpTime = ntpTimeProvider.getNTPTime();
+    System.out.println(ntpTime);
+    if (ntpTime == -1) {
+      finishAffinity();
+    }
+    Calendar calendar = Calendar.getInstance();
+    calendar.setTimeInMillis(ntpTime);
+    calendarView.setMinDate(ntpTime);
+    calendar.add(Calendar.YEAR, 1);
+    calendarView.setMaxDate(calendar.getTimeInMillis());
+
     Spinner spinnerHorario = findViewById(R.id.spinnerHorario);
     String[] horarios = {"13h", "14h", "15h", "16h", "17h", "18h", "19h", "20h"};
     spinnerHorario.setAdapter(new ArrayAdapter<>(
-        this, //getApplicationContext(),
+        this,
         com.google.android.material.R.layout.support_simple_spinner_dropdown_item,
         horarios
     ));
@@ -91,6 +99,5 @@ public class AgendarConsulta extends AppCompatActivity {
       }
     });
   }
-
 
 }

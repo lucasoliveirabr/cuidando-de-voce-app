@@ -24,6 +24,7 @@ import com.example.cuidandodevoce.api.ai.AiRetrofitClient;
 import java.io.IOException;
 import java.util.Objects;
 
+import io.noties.markwon.Markwon;
 import okhttp3.Request;
 import okio.Buffer;
 import retrofit2.Call;
@@ -111,13 +112,15 @@ public class Ai extends AppCompatActivity {
 
             if (response.isSuccessful()) {
               Log.i(TAG, "Sucesso no envio de dados à API.");
-              textViewAiAnswer.setText(response.body());
-              textViewAiAnswer.setVisibility(View.VISIBLE);
-              editTextAiUserField.setEnabled(true);
-              editTextAiUserField.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(Ai.this, R.color.white)));
               Log.d(TAG, "==========");
               Log.d(TAG, "API response: " + response.body());
               Log.d(TAG, "==========");
+
+              Markwon markwon = Markwon.create(Ai.this);
+              markwon.setMarkdown(textViewAiAnswer, response.body());
+              textViewAiAnswer.setVisibility(View.VISIBLE);
+              editTextAiUserField.setEnabled(true);
+              editTextAiUserField.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(Ai.this, R.color.white)));
             } else {
               Log.e(TAG, "Falha na requisição. Código: " + response.code());
               Log.e(TAG, "Erro da API: " + response.errorBody().toString());
