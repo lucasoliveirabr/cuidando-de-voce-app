@@ -16,7 +16,6 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.Objects;
-import java.util.TimeZone;
 
 public class AgendarConsulta extends AppCompatActivity {
 

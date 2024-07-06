@@ -31,8 +31,14 @@ A Doutora Estela é uma inteligência artificial que assume o papel de médica, 
 
 ---
 
+### Mais sobre
+- Aplicativo assinado digitalmente.
+- Aplicativo otimizado com Minify, Shrink e Obfuscate.
+
+---
+
 ### Download
 
 ![Pre-release version](https://img.shields.io/github/v/release/lucasoliveirabr/cuidando-de-voce-app?include_prereleases&label=Pre-release&logo=github)
 
-<a href="https://github.com/lucasoliveirabr/cuidando-de-voce-app/releases/download/v0.9.0/cuidando-de-voce-v0.9.0.apk"><img width="200px" src="./app/src/main/gitx/android_download.png" alt="Download Button"></a>
+<a href="https://github.com/lucasoliveirabr/cuidando-de-voce-app/releases/download/v0.10.0/cuidando-de-voce-0.10.0.apk"><img width="200px" src="./app/src/main/gitx/android_download.png" alt="Download Button"></a>

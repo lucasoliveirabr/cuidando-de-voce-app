@@ -43,9 +43,9 @@
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:src="@drawable/ic_baseline_notifications_24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_notifications_24" />
 
       <View
         android:id="@+id/viewDicasTopo"
@@ -92,7 +92,7 @@
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="@+id/viewAgendarConsultas"
         app:layout_constraintTop_toTopOf="@+id/viewAgendarConsultas"
-        app:srcCompat="@drawable/calendario" />
+        app:srcCompat="@drawable/ic_baseline_calendar_24" />
 
       <TextView
         android:id="@+id/textViewAgendarConsultas3"
@@ -127,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="@+id/viewMinhasConsultas"
         app:layout_constraintStart_toStartOf="@+id/viewMinhasConsultas"
         app:layout_constraintTop_toTopOf="@+id/viewMinhasConsultas"
-        app:srcCompat="@drawable/consulta_medica" />
+        app:srcCompat="@drawable/ic_materialsymbols_stethoscope_24" />
 
       <TextView
         android:id="@+id/textViewMinhasConsultas"
@@ -162,7 +162,7 @@
         app:layout_constraintEnd_toEndOf="@+id/viewMeusDocumentos"
         app:layout_constraintStart_toStartOf="@+id/viewMeusDocumentos"
         app:layout_constraintTop_toTopOf="@+id/viewMeusDocumentos"
-        app:srcCompat="@drawable/envio" />
+        app:srcCompat="@drawable/ic_baseline_folder_24" />
 
       <TextView
         android:id="@+id/textViewMeusDocumentos"
@@ -197,7 +197,7 @@
         app:layout_constraintEnd_toEndOf="@+id/viewMeuPlano"
         app:layout_constraintStart_toStartOf="@+id/viewMeuPlano"
         app:layout_constraintTop_toTopOf="@+id/viewMeuPlano"
-        app:srcCompat="@drawable/paciente" />
+        app:srcCompat="@drawable/ic_baseline_card_24" />
 
       <TextView
         android:id="@+id/textViewMeuPlano"
@@ -231,7 +231,7 @@
         app:layout_constraintEnd_toEndOf="@+id/viewSuporte"
         app:layout_constraintStart_toStartOf="@+id/viewSuporte"
         app:layout_constraintTop_toTopOf="@+id/viewSuporte"
-        app:srcCompat="@drawable/headset" />
+        app:srcCompat="@drawable/ic_baseline_headset_mic_24" />
 
       <TextView
         android:id="@+id/textViewSuporte"

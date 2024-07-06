@@ -15,7 +15,7 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/cuidando_de_voce_2"
+      app:srcCompat="@drawable/cuidando_de_voce_splash"
       android:contentDescription="Splash screen" />
 
     <TextView

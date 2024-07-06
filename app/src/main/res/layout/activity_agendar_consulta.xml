@@ -34,7 +34,7 @@
           android:layout_marginTop="8dp"
           android:layout_marginEnd="32dp"
           android:background="@drawable/edittext_background"
-          android:drawableEnd="@drawable/ic_search"
+          android:drawableEnd="@drawable/ic_baseline_search_24"
           android:drawablePadding="20dp"
           android:ems="10"
           android:hint="Selecione a especialidade"
@@ -54,7 +54,7 @@
           android:layout_marginTop="8dp"
           android:layout_marginEnd="32dp"
           android:background="@drawable/edittext_background"
-          android:drawableEnd="@drawable/ic_search"
+          android:drawableEnd="@drawable/ic_baseline_search_24"
           android:drawablePadding="20dp"
           android:ems="10"
           android:hint="Insira um local a seguir"
@@ -173,7 +173,7 @@
           android:layout_marginTop="32dp"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/aCTextViewEspecialidade"
-          app:srcCompat="@drawable/calendario" />
+          app:srcCompat="@drawable/ic_baseline_calendar_24" />
 
         <ImageView
           android:id="@+id/imageViewEspecialidade"
@@ -183,7 +183,7 @@
           android:layout_marginTop="32dp"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/aCTextViewLocal"
-          app:srcCompat="@drawable/plano_de_saude" />
+          app:srcCompat="@drawable/ic_baseline_health_and_safety_24" />
 
         <ImageView
           android:id="@+id/imageViewLocal"
@@ -193,7 +193,7 @@
           android:layout_marginTop="32dp"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/toggleButtonGroupTipoConsulta"
-          app:srcCompat="@drawable/hospital" />
+          app:srcCompat="@drawable/ic_baseline_location_on_24" />
 
         <com.google.android.material.button.MaterialButtonToggleGroup
           android:id="@+id/toggleButtonGroupTipoConsulta"
@@ -215,7 +215,7 @@
               android:text="Presencial"
               android:textAllCaps="false"
               app:cornerRadius="10dp"
-              app:icon="@drawable/predio"
+              app:icon="@drawable/ic_baseline_apartment_24"
               app:layout_constraintEnd_toEndOf="parent"
               app:layout_constraintStart_toStartOf="parent"
               app:layout_constraintTop_toBottomOf="@+id/textViewAtendimento" />
@@ -230,7 +230,7 @@
               android:text="Telemedicina"
               android:textAllCaps="false"
               app:cornerRadius="10dp"
-              app:icon="@drawable/phone"
+              app:icon="@drawable/ic_baseline_smartphone_24"
               app:layout_constraintEnd_toEndOf="parent"
               app:layout_constraintStart_toStartOf="parent"
               app:layout_constraintTop_toBottomOf="@+id/textViewAtendimento" />
@@ -244,7 +244,7 @@
           android:layout_marginTop="32dp"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/viewTopo2"
-          app:srcCompat="@drawable/paciente" />
+          app:srcCompat="@drawable/ic_baseline_card_24" />
 
         <Spinner
           android:id="@+id/spinnerHorario"
@@ -264,7 +264,7 @@
           android:layout_marginTop="32dp"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toBottomOf="@+id/calendarView"
-          app:srcCompat="@drawable/relogio" />
+          app:srcCompat="@drawable/ic_baseline_schedule_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

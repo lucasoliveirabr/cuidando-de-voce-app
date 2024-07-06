@@ -16,17 +16,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.core.view.ViewCompat;
 
 import com.example.cuidandodevoce.api.ai.AiApi;
 import com.example.cuidandodevoce.api.ai.AiRetrofitClient;
 
-import java.io.IOException;
 import java.util.Objects;
 
 import io.noties.markwon.Markwon;
 import okhttp3.Request;
-import okio.Buffer;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -42,7 +39,7 @@ public class Ai extends AppCompatActivity {
 
     Objects.requireNonNull(getSupportActionBar()).hide();
 
-    getWindow().setStatusBarColor(getResources().getColor(R.color.soft_pink));
+    getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.soft_pink));
 
     AlertDialog.Builder builder = new AlertDialog.Builder(this);
     builder.setTitle("Aviso");
